@@ -7,10 +7,10 @@ export function Home(){
     return (
         <div>
             <h1>Meus Jogos Favoritos</h1>
-
+            <JogosCard/>
             
             <h1>Jogos</h1>
-            <JogosList/>
+            
             <JogosCard/>
         </div>
     )

@@ -1,7 +1,9 @@
 import React from 'react'
 import './JogosCard.css'
 
-export const JogosCard = () => {
+export const JogosCard = (props) => {
+    const jogos = props.jogos;
+
     return (
         <div>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -11,7 +13,7 @@ export const JogosCard = () => {
                     <img src="https://playvalorant.com/static/agents-group-539f9e91c0ca94a88baafa239808180b.png"/>
                     </div>
                     <div class="contentBx">
-                    <h2>Valorant</h2>
+                    <h2>jogos</h2>
                     <div class="size">
                         <h3>Nota :</h3>
                         <span class="fa fa-star checked"></span>
