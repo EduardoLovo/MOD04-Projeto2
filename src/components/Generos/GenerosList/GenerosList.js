@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect} from 'react';
-import { Api } from '../../Api/Api';
+import { Api } from '../../../Api/Api';
 
 export const GenerosList = () => {
     const [generos, setGeneros] = useState([]);
