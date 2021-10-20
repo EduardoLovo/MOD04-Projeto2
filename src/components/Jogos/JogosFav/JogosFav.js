@@ -4,26 +4,26 @@ import { Api } from '../../../Api/Api';
 import JogosCard from '../JogosCard/JogosCard';
 import './JogosList.css'
 
-export const JogosList = () => {
-    const [jogos, setJogos] = useState([]);
+export const UsuariosList = () => {
+    const [usuarios, setUsuarios] = useState([]);
 
     useEffect(() => {
-        const loadJogosList = async () => {
+        const loadUsuariosList = async () => {
             const response = await Api.buildApiGetRequest(Api.readAllUrl());
 
             const results = await response.json();
 
-            setJogos(results);
+            setUsuarios(results);
         };
 
-        loadJogosList();
+        loadUsuariosList();
     }, []);
 
     return (
         <div className="cardList">
             
-            {jogos.map((jogo) =>
-            <JogosCard jogo={jogo} key={jogo.id}/>
+            {usuarios.map((perfil) =>
+            <div perfil={perfil} key={perfil.id}/>
             )}
         </div>
     );

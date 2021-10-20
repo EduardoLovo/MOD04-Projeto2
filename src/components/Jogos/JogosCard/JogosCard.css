@@ -3,20 +3,17 @@
 
 *{
   font-family: 'Poppins', sans-serif;
+  
+  
 }
 
-body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #131313;
+.body{
+  height: 40vh;
+
 }
 
 .container{
   position: relative;
-  display: flex;
-  
 }
 
 .container .card{
@@ -46,7 +43,7 @@ body{
 }
 
 .container .card:after{
-  content: 'xbox';
+  content: '';
   position: absolute;
   top: 1%;
   left: 15%;

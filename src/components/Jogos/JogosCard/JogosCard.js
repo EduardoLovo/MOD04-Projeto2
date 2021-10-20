@@ -1,50 +1,43 @@
 import React from 'react'
+import { useHistory } from 'react-router'
+// import { Api } from '../../../Api/Api';
 import './JogosCard.css'
 
-export const JogosCard = (props) => {
-    const jogos = props.jogos;
+export default function JogosCard({jogo}) {
+    
+    
+    const history = useHistory();
+
+    const handleClick = () => {
+        history.push(`/jogos/view/${jogo.id}`);
+    };
 
     return (
-        <div>
+        <div className="body">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-            <div class="container">
-                <div class="card">
-                    <div class="imgBx">
-                    <img src="https://playvalorant.com/static/agents-group-539f9e91c0ca94a88baafa239808180b.png"/>
+            
+            <div className="container">
+                <div className="card" onClick={handleClick}>
+                    <div className="imgBx">
+                    <img src={jogo.capa} alt={jogo.titulo + "'s image"}/>
                     </div>
-                    <div class="contentBx">
-                    <h2>jogos</h2>
-                    <div class="size">
+                    <div className="contentBx">
+                    <h2>{jogo.titulo}</h2>
+                    <div className="size">
                         <h3>Nota :</h3>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
+                        <span className="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
+                        <span className="fa fa-star"></span>
+                        <span className="fa fa-star"></span>
                     </div>
-                    <h3 class="ano">2015</h3>
-                    <a href="#">Add</a>
+                    <h3 className="ano">{jogo.ano}</h3>
+                    {/* <a href="">Add</a> */}
                     </div>
                 </div>
-                <div class="card">
-                    <div class="imgBx">
-                    <img src="https://cdn.pixabay.com/photo/2016/11/11/14/49/minecraft-1816996_1280.png"/>
-                    </div>
-                    <div class="contentBx">
-                    <h2>Valorant</h2>
-                    <div class="size">
-                        <h3>Nota :</h3>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <h3 class="ano">2015</h3>
-                    <a href="#">Add</a>
-                    </div>
-                </div>
+                
             </div>
+            
         </div>
     )
 }
