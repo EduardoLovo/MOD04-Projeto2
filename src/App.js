@@ -35,8 +35,8 @@ function App() {
             <Route path="/logout" component={Logout} />
             <Route path="/login"  component={Login}/>
             <Route path="/usuarios/create"  component={CreateUsuario}/>
-            <Route path="/jogos/view/:id"  component={ViewJogo}/>
             {/* Logado */}
+            <GuardedRoute path="/jogos/view/:id"  component={ViewJogo}/>
             <GuardedRoute path="/jogos/create"  component={CreateJogos}/>
             <GuardedRoute path="/jogos/delete/:id"  component={DeleteJogo}/>
             <GuardedRoute path="/jogos/update/:id"  component={UpdateJogo}/>

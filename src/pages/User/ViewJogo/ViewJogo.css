@@ -10,9 +10,9 @@
 }
 
 .button {
-    width: 8rem;
+    width: 7rem;
     margin-top: 10rem;
-    margin-left: 2.5rem;
+    margin-left: 2rem;
 }
 
 .span p {
@@ -22,4 +22,9 @@
 
 .span label {
     color: lawngreen;
+}
+
+.buttonView {
+    display: flex;
+
 }

@@ -80,13 +80,15 @@ export default function Login(props) {
             />
           </div>
         </form>
-      </div>
+        <div  className="buttonL">
 
-      <button className="form__submit button--primary">
-        <a className="a" href="/usuarios/create">
-          Criar Novo Usuario
-        </a>{" "}
-      </button>
+          <button className="form__submit button--primary">
+            <a className="a" href="/usuarios/create">
+              Criar Novo Usuario
+            </a>{" "}
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

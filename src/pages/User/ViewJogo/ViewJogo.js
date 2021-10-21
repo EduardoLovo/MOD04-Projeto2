@@ -36,19 +36,22 @@ export default function ViewJogo(props) {
             <div className="view">
                 <div className="card_b">
                     <JogosCard jogo={jogo} />
-                    <LinkButton
-                        to={"/jogos/update/" + id}
-                        className="form__submit"
-                    >
-                        Edit
-                    </LinkButton>
+                    <div className="buttonView">
 
-                    <LinkButton
-                        to={"/jogos/delete/" + id}
-                        className="button button--danger"
-                    >
-                        Delete
-                    </LinkButton>
+                        <LinkButton
+                            to={"/jogos/update/" + id}
+                            className="button form__submit"
+                        >
+                            Edit
+                        </LinkButton>
+
+                        <LinkButton
+                            to={"/jogos/delete/" + id}
+                            className="button button--danger"
+                        >
+                            Delete
+                        </LinkButton>
+                    </div>
             
                 </div>
                 <div className="span">
