@@ -38,7 +38,7 @@ export default function ViewJogo(props) {
                     <JogosCard jogo={jogo} />
                     <LinkButton
                         to={"/jogos/update/" + id}
-                        className="button button--primary"
+                        className="form__submit"
                     >
                         Edit
                     </LinkButton>

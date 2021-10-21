@@ -1,4 +1,4 @@
-import { Api } from "../../Api/Api";
+import { Api } from "../../../Api/Api";
 // import "./CreatePerfil.css"
 
 export default function CreatePerfil (props) {

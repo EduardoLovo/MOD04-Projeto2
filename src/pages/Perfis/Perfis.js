@@ -26,15 +26,15 @@ export const PerfisList = (props) => {
             
             <div className="fundoPerfil">
                 <h1>Perfis</h1>
-                <div className="fav">   
-                    
+                <div>
+                    <p>{usuarios.perfis}</p>                    
                 </div>
 
                 
             </div>
 
             <div>
-                <input className="form__submit" type="submit" value="Criar Novo Perfil" />
+                <LinkButton className="form__submit" to="/perfis/create" value="Criar Novo Perfil" >Criar Novo Perfil</LinkButton>
             </div>
 
             

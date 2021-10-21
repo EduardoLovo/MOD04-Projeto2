@@ -21,7 +21,7 @@ import CreateJogos from './pages/Admin/CreateJogos/CreateJogos';
 import UpdateJogo from './pages/Admin/UpdateJogos/UpdataJogos';
 import CreateGenero from './pages/Admin/CreateGenero/CreateGenero';
 import { PerfisList } from './pages/Perfis/Perfis';
-import CreatePerfil from './pages/CreatePerfil/CreatePerfil';
+import CreatePerfil from './pages/Admin/CreatePerfil/CreatePerfil';
 // import LoginAdmin from './pages/Admin/LoginAdmin/LoginAdmin';
 
 
