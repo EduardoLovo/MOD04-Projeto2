@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { JogosList } from "../../../components/Jogos/JogosList/JogosList";
+import  JogosList  from "../../../components/Jogos/JogosList/JogosList";
 import { JwtHandler } from "../../../jwt-handler/JwtHandler";
 import './Home.css';
 
